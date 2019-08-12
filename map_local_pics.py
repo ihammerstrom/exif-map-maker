@@ -35,7 +35,6 @@ def make_pic_data_csv(paths_arr):
         try:
           data = gpsphoto.getGPSData(full_path)
           if data != {}: 
-            print(data)
             csv_str = "%s, %s %s, %s,\n" % (
                 full_path,
                 data.get('Latitude'), 
