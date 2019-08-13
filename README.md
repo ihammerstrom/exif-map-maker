@@ -1,6 +1,7 @@
 # exif-map-maker
 Tools to create an HTML route map from the location data in image Exif fields.
 A hosted version with a simple client written in ReactJS is available at https://00ff.pw. Feel free to use the images in the [samplePics](https://github.com/ihammerstrom/exif-map-maker/tree/master/samplePics "samplePics") directory to try out the hosted version.
+
 Example output can be found at https://objective-bhaskara-82ec61.netlify.com
 
 This project is still under development, open sourced as of 08/12/2019.
