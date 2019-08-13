@@ -47,6 +47,7 @@ It is the API server used by https://00ff.pw
 There is no client provided in this repo but you can try out the functionality by following the instructions below.
 
 Using two terminals, run:
+
 Terminal 1:
 ```
 (env) python3 map_server.py
