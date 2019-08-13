@@ -1,6 +1,6 @@
 # exif-map-maker
 Tools to create an HTML route map from the location data in image Exif fields.
-A hosted version with a simple client written in ReactJS is available at 00ff.pw. Feel free to use the images in the [samplePics](https://github.com/ihammerstrom/exif-map-maker/tree/master/samplePics "samplePics") directory to try out the hosted version.
+A hosted version with a simple client written in ReactJS is available at https://00ff.pw. Feel free to use the images in the [samplePics](https://github.com/ihammerstrom/exif-map-maker/tree/master/samplePics "samplePics") directory to try out the hosted version.
 
 This project is still under development, open sourced as of 08/12/2019.
 
@@ -20,7 +20,7 @@ And finally, install the requirements:
 
 # Usage
 
-There are two main ways to use exif-map-maker from this source if you don't want to use the web client available at 00ff.pw
+There are two main ways to use exif-map-maker from this source if you don't want to use the web client available at https://00ff.pw
 
 **1) (easiest) Locally from a directory:**
 For example, using the images in the directory [samplePics](https://github.com/ihammerstrom/exif-map-maker/tree/master/samplePics "samplePics"), run 
@@ -43,7 +43,7 @@ Now, you have your html file, ```my_map.html```  which shows the the map created
 **2) As a server:**
 The file [map_server.py](https://github.com/ihammerstrom/exif-map-maker/blob/master/map_server.py "map_server.py") serves the [map_maker.py](https://github.com/ihammerstrom/exif-map-maker/blob/master/map_maker.py "map_maker.py") functionality by returning an HTML map when a client does a ```POST``` a the endpoint ```/api/v1/get_map``` with the the payload containing image data such as: ```{picData: [{lat: 47.6, lon: 122.3, date:2017:06:19 19:56:52},  ... ]}``` 
 
-It is the API server used by 00ff.pw. 
+It is the API server used by https://00ff.pw. 
 There is no client provided in this repo but you can try out the functionality by following the instructions below.
 
 Using two terminals, run:
