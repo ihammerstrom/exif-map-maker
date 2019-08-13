@@ -43,7 +43,7 @@ Now, you have your html file, ```my_map.html```  which shows the the map created
 **2) As a server:**
 The file [map_server.py](https://github.com/ihammerstrom/exif-map-maker/blob/master/map_server.py "map_server.py") serves the [map_maker.py](https://github.com/ihammerstrom/exif-map-maker/blob/master/map_maker.py "map_maker.py") functionality by returning an HTML map when a client does a ```POST``` a the endpoint ```/api/v1/get_map``` with the the payload containing image data such as: ```{picData: [{lat: 47.6, lon: 122.3, date:2017:06:19 19:56:52},  ... ]}``` 
 
-It is the API server used by https://00ff.pw. 
+It is the API server used by https://00ff.pw
 There is no client provided in this repo but you can try out the functionality by following the instructions below.
 
 Using two terminals, run:
@@ -57,3 +57,6 @@ curl -XPOST -H "Content-type: application/json" -d '{"picData":[{"lat":48.452858
 ```
 And then in Terminal 2 you can open ```map.html``` to view your map.
 
+
+# Example output:
+<iframe width="100%" height="560" src="https://objective-bhaskara-82ec61.netlify.com" frameborder="0" allowfullscreen></iframe>
