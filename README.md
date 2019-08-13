@@ -59,4 +59,6 @@ And then in Terminal 2 you can open ```map.html``` to view your map.
 
 
 # Example output:
+<html>
 <iframe width="100%" height="560" src="https://objective-bhaskara-82ec61.netlify.com" frameborder="0" allowfullscreen></iframe>
+</html>
