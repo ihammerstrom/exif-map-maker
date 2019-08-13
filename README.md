@@ -57,8 +57,7 @@ curl -XPOST -H "Content-type: application/json" -d '{"picData":[{"lat":48.452858
 ```
 And then in Terminal 2 you can open ```map.html``` to view your map.
 
+&nbsp;
 
-# Example output:
-<html>
-<iframe width="100%" height="560" src="https://objective-bhaskara-82ec61.netlify.com" frameborder="0" allowfullscreen></iframe>
-</html>
+## Link to sample output:
+https://objective-bhaskara-82ec61.netlify.com
