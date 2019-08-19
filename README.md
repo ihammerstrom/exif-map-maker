@@ -2,10 +2,10 @@
 Tools to create an HTML route map from the location data in image Exif fields.
 A hosted version with a simple client written in ReactJS is available at https://00ff.pw. Feel free to use the images in the [samplePics](https://github.com/ihammerstrom/exif-map-maker/tree/master/samplePics "samplePics") directory to try out the hosted version.
 
-Example output can be found at https://objective-bhaskara-82ec61.netlify.com
+**Example output** can be found at https://objective-bhaskara-82ec61.netlify.com
 
-Time in an area is shown by a yellow circle of a size scaled by calculating the time between the first and the last picture taken in a moving 10km(config['area_distance_km']) radius.
-Speed between points is shown by the color of the line connecting the points ranging from yellow(slower) to red(faster). Speed is calculated as the distance divided by time from the current to the last picture, with the option of using a moving average (config['hops_avg_speed']) over a number of pictures back.
+**Time in an area** is shown by a yellow circle of a size scaled by calculating the time between the first and the last picture taken in a moving 10km(config['area_distance_km']) radius.
+**Speed between points** is shown by the color of the line connecting the points ranging from yellow(slower) to red(faster). Speed is calculated as the distance divided by time from the current to the last picture, with the option of using a moving average speed (config['hops_avg_speed']) calculated over a number of pictures back.
 
 This project is still under development, open sourced as of 08/12/2019.
 
