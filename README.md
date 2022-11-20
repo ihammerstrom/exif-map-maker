@@ -28,7 +28,7 @@ And finally, install the requirements:
 
 # Usage
 
-There are two main ways to use exif-map-maker from this source if you don't want to use the web client available at https://00ff.pw
+~~There are two main ways to use exif-map-maker from this source if you don't want to use the web client available at https://00ff.pw~~
 
 **1) (easiest) Locally from a directory:**
 For example, using the images in the directory [samplePics](https://github.com/ihammerstrom/exif-map-maker/tree/master/samplePics "samplePics"), run 

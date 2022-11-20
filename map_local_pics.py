@@ -4,6 +4,8 @@ from GPSPhoto import gpsphoto
 from datetime import datetime
 import sys
 import map_maker
+import exifread
+
 
 def to_timestamp(date, utc_time):
   date_arr = date.split('/')
@@ -33,13 +35,18 @@ def make_pic_data_csv(paths_arr):
       for name in files:
         full_path = os.path.join(root, name)
         try:
-          data = gpsphoto.getGPSData(full_path)
-          if data != {}: 
+
+          gps_data = gpsphoto.getGPSData(full_path)
+
+          f = open(full_path, 'rb')
+          tags = exifread.process_file(f)
+
+          if gps_data != {}:
             csv_str = "%s, %s %s, %s,\n" % (
                 full_path,
-                data.get('Latitude'), 
-                data.get('Longitude'),
-                to_timestamp(data['Date'], data['UTC-Time']))
+                gps_data.get('Latitude'),
+                gps_data.get('Longitude'),
+                tags['Image DateTime'])
             
             print(csv_str.rstrip())
             outfile.write(csv_str)
@@ -80,11 +87,11 @@ if __name__ == "__main__":
   config = {
       'area_distance_km': 10,
       'hops_avg_speed': 1,
-      'time_in_area_circle_size_multiplier': 500,
-      'standalone_pic_size': 500,
+      'time_in_area_circle_size_multiplier': 5,
+      'standalone_pic_size': 1,
       # 'color_map': 'YlOrRd',
       'less_than_kmh_for_circle': 4,
-      'hours_trim': 150,
+      'hours_trim': 5,
       # 'file_path': '/Users/ihammerstrom/Desktop/trip_pics_out_noShanghai_newDate.csv',
       # detect_flight_speed: False,
       # detect_flight_distance: False,
