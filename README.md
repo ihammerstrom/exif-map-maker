@@ -1,8 +1,8 @@
 # exif-map-maker
 Tools to create an HTML route map from the location data in image Exif fields.
-A hosted version with a simple client written in ReactJS is available at https://00ff.pw. Feel free to use the images in the [samplePics](https://github.com/ihammerstrom/exif-map-maker/tree/master/samplePics "samplePics") directory to try out the hosted version.
+A hosted version with a simple client written in ReactJS is available at ~~https://00ff.pw~~ (no longer accessible). Feel free to use the images in the [samplePics](https://github.com/ihammerstrom/exif-map-maker/tree/master/samplePics "samplePics") directory to try out the hosted version.
 
-**Example output** can be found at https://objective-bhaskara-82ec61.netlify.com
+**Example output** can be found at https://objective-bhaskara-82ec61.netlify.com (NOTE, to fix: current API providing the map images is no longer in service)
 
 
 **Time in an area** is shown by a yellow circle of a size scaled by calculating the time between the first and the last picture taken in a moving 10km(config['area_distance_km']) radius.
